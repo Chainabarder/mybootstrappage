@@ -17,6 +17,14 @@
   border-color: #000;
 
 }
+.navbar-brand {
+
+  position: absolute; 
+  top: 25px; 
+  left: 90px; 
+  font-size: 45px; 
+  font-family: 'Baloo Bhaina', cursive;
+}
 .navbar-default .navbar-brand {
   color: orange;
 }
@@ -131,7 +139,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #f0ff26;
   position:absolute;
   top: 17px;
-  left: 82px;
+  left: 55px;
   font-size: 38px;
 }
 
@@ -156,7 +164,7 @@ position: relative;
   margin: 0px;
   text-align: center;
   position: absolute;
-  top: 175px;
+  top: 200px;
   left: 75px;
 
 
@@ -164,11 +172,13 @@ position: relative;
 
 .col-right img {
 
+
   position: absolute;
   top: 100px;
-  right: 160px; }
-
+  right: 150px; 
 }
+
+
 
 #footer {
 
@@ -185,6 +195,7 @@ position: relative;
   width:33%;
   display: inline-block;
   text-align: left;
+  color: orange;
   
 }
 
@@ -193,6 +204,7 @@ position: relative;
   display: inline-block;
   width:33%;
   text-align: center;
+  color: orange;
 }
 
 
