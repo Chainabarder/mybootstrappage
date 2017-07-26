@@ -246,8 +246,8 @@ position: relative;
 /* DESKTOP & LAPTOP */
 
 
-@media only screen and (min-device-width : 1024px) and (max-device-width : 1224px) 
-                   and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {
+                   
 
  /* NAVBAR */
 
@@ -470,6 +470,8 @@ position: relative;
   display: inline-block;
 }
 }
+
+/* TABLET */ 
 
 @media only screen  and (min-width : 768px) and (max-width: 1024px) {
 
@@ -697,4 +699,235 @@ position: relative;
 }
 
   }
+
+/* mobile */
+
+  @media only screen  and (min-width : 375px) and (max-width: 425px) {
+
+/*NAVBAR */
+
+
+.navbar {
+  position: relative;
+  min-height: 70px;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
+  width: 100%;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: orange;
+  padding: 2px 2px;
+  width: 100%;
+  display: none;
+}
+
+.navbar-default {
+  background-color: #000;
+  border-color: #000;
+
+}
+.navbar-brand {
+
+  position: absolute; 
+  top: 25px; 
+  left: 30px; 
+  font-size: 25px; 
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+/*ICON*/
+
+.ion-android-warning {
+
+  color: #f0ff26;
+  position:absolute;
+  top: 28px;
+  left: 18px;
+  font-size: 25px;
+}
+
+.navbar-default .navbar-brand {
+  color: orange;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: orange;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: orange;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: orange;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: orange;
+  background-color: transparent;
+
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: orange;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: orange;
+  background-color: #000;
+}
+
+.navbar-default .navbar-link {
+  color: orange;
+}
+.navbar-default .navbar-link:hover {
+  color: yellow;
+}
+.navbar-default .btn-link {
+  color: orange;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: yellow;
+}
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+
+
+nav li a {
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 18px;
+  position: absolute;
+  width: 90px;
+  display: none;
+} 
+
+.Home {
+position: absolute;
+top: 40px; 
+left: 325px;
+font-size: 15px;
+display: none;
+}
+
+.Who {
+position: absolute;
+top:40px; 
+left: 370px;
+font-size: 15px;
+display: none;
+}
+
+.Job {
+position: absolute;
+top:40px; 
+left: 415px; 
+width: 140px;
+font-size: 15px;
+display: none;
+}
+
+.Contact {
+position: absolute;
+top: 40px; 
+left: 460px;
+font-size: 15px;
+display: none;
+}
+
+/*CONTAINER*/
+
+.container {
+width: 100%;
+background-image: url("IMGS/fondo.png");
+background-color: #f0ff26;
+height: 561px;
+position: relative;
+
+}
+
+.col-left h1 {
+   font-family: 'Baloo Bhaina', cursive;
+  font-size: 40px;
+  color: black;
+  margin: 0px;
+  text-align: center;
+  position: absolute;
+  top: 410px;
+  left: 10px;
+}
+
+.col-right img {
+  position: absolute;
+  top: 75px;
+  right: 35px; 
+}
+
+#footer {
+  width:100%; 
+  height: 31px;
+  background-color: #000;
+  display: block;
+  position: relative; 
+}
+
+.Version {
+  
+  font-family: 'Baloo Bhaina', cursive;
+  width:33%;
+  display: inline-block;
+  text-align: left;
+  color: orange;
+  display: none;
+  
+}
+
+.Widget {
+  font-family: 'Baloo Bhaina', cursive;
+  display: inline-block;
+  width: 38%;
+  text-align: center;
+  color: orange;
+}
+
+.MAIL {
+  
+  font-family: 'Baloo Bhaina', cursive;
+  background-color: transparent;
+  color: orange;
+  text-decoration: none;
+  text-align: right;
+  width:44%;
+  display: inline-block;
+  position: absolute;
+  right: 30px;
+  bottom: 8px;
+}
+
+}
 
