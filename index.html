@@ -26,11 +26,21 @@
       <li><a class="Who" href="#">Who am I </a></li>
       <li><a class="Job" href="#">Job Experience</a></li>
       <li><a class="Contact" href="#">Contact</a></li>
-     
     </ul>
   </div>
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
 </nav>
 </header>
+
+<div class="menu">
+  <ul>
+    <a href="#"><li>Home</li></a>
+    <a href="#"><li>Who am I</li></a>
+    <a href="#"><li>Job Experience</li></a>
+    <a href="#"><li>Contact</li></a>
+  </ul>
+</div> 
 
 <div class="container">
             
@@ -51,5 +61,25 @@
 
 <script src="http://code.jquery.com/jquery.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
+<script> $( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+</script>
 </body> 
 </html>
