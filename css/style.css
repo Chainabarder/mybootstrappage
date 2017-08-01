@@ -2,7 +2,7 @@
 
 /* LAPTOP LARGE */
 
-@media only screen and (min-width : 1224px) and (max-width : 1824px)  { 
+@media only screen and (min-width : 1224px) and (max-width : 1400px)  { 
 
   /* NAVBAR */
 
@@ -51,27 +51,27 @@ nav li a {
 .Home {
 position: absolute;
 top: 40px; 
-left: 580px;
+left: 700px;
 }
 
 .Who {
 position: absolute;
 top:40px; 
-left: 655px
+left: 755px
 
 }
 
 .Job {
 position: absolute;
 top: 22px; 
-left: 730px; 
+left: 830px; 
 
 }
 
 .Contact {
 position: absolute;
 top: 40px; 
-left: 805px;
+left: 905px;
 }
 
 
@@ -270,12 +270,12 @@ position: relative;
 
 .col-left h1 {
    font-family: 'Baloo Bhaina', cursive;
-  font-size: 45px;
+  font-size: 50px;
   color: black;
   margin: 0px;
   text-align: center;
   position: absolute;
-  top: 200px;
+  top: 205px;
   left: 75px;
 }
 
@@ -323,30 +323,8 @@ position: relative;
   display: inline-block;
 }
 }
- /*
-@media (max-width: 767px) {
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-    color: orange;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: orange;
-    background-color: #000;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
-    color: orange;
-    background-color:#000;
-  }
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
-  .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
-    color: orange;
-    background-color: #000;
-  }
-}
-*/
+
+
 
 /* DESKTOP & LAPTOP */
 
@@ -631,13 +609,13 @@ position: relative;
   text-align: center;
   position: absolute;
   top: 410px;
-  left: 190px;
+  left: 155px;
 }
 
 .col-right img {
   position: absolute;
   top: 75px;
-  right: 335px; 
+  right: 330px; 
 }
 
 
@@ -1075,21 +1053,21 @@ nav li a {
 .Home {
 position: absolute;
 top: 40px; 
-left: 325px;
+left: 525px;
 font-size: 15px;
 }
 
 .Who {
 position: absolute;
 top:40px; 
-left: 370px;
+left: 570px;
 font-size: 15px;
 }
 
 .Job {
 position: absolute;
 top:40px; 
-left: 415px; 
+left: 615px; 
 width: 140px;
 font-size: 15px;
 }
@@ -1097,7 +1075,7 @@ font-size: 15px;
 .Contact {
 position: absolute;
 top: 40px; 
-left: 460px;
+left: 660px;
 font-size: 15px;
 }
 
@@ -1189,13 +1167,13 @@ position: relative;
   text-align: center;
   position: absolute;
   top: 410px;
-  left: 60px;
+  left: 190px;
 }
 
 .col-right img {
   position: absolute;
   top: 75px;
-  right: 215px; 
+  right: 330px; 
 }
 
 
