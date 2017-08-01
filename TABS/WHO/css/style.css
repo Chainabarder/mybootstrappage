@@ -13,6 +13,10 @@ le agregue el height y el width de 100% para quitar el margen blanco que recorre
 	position: relative;
 }
 
+body {
+
+	margin: 0px;
+}
 
 /*NAVBAR*/
 .NavBar {
@@ -106,6 +110,201 @@ en el codigo y le modifico sus valores, no cambia nada, son atributos -webkit- *
 	right: 420px;
 	color: #f0ff26;
 	font-size: 18px;
+}
+
+.navbar-default {
+  background-color: #000;
+  border-color: #000;
+
+}
+.navbar-brand {
+
+  position: absolute; 
+  top: 25px; 
+  left: 90px; 
+  font-size: 45px; 
+  font-family: 'Baloo Bhaina', cursive;
+}
+.navbar-default .navbar-brand {
+  color: orange;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: orange;
+  background-color: transparent;
+}
+.navbar-default .navbar-text {
+  color: orange;
+}
+.navbar-default .navbar-nav > li > a {
+  color: orange;
+  padding: 2px 2px;
+  width: 90px;
+  display: inline-block;
+
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: orange;
+  background-color: transparent;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: orange;
+  background-color: transparent;
+
+}
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:hover,
+.navbar-default .navbar-nav > .disabled > a:focus {
+  color: orange;
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle {
+  border-color: #ddd;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #000;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: orange;
+  background-color: #000;
+}
+
+.navbar-default .navbar-link {
+  color: orange;
+}
+.navbar-default .navbar-link:hover {
+  color: yellow;
+}
+.navbar-default .btn-link {
+  color: orange;
+}
+.navbar-default .btn-link:hover,
+.navbar-default .btn-link:focus {
+  color: yellow;
+}
+.navbar-default .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-default .btn-link:hover,
+.navbar-default .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-default .btn-link:focus {
+  color: #ccc;
+}
+
+/* BURGER */
+
+.hamburger {
+  background: none;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  line-height :45px;
+  padding: 5px 15px 0px 15px;
+  color: orange;
+  border: 0;
+  font-size: 1.8em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+  display: none;
+}
+
+.cross {
+  background: none;
+  position: absolute;
+  top:20px;
+  right: 15px;
+  padding: 7px 15px 0px 15px;
+  color: orange;
+  border: 0;
+  font-size: 3em;
+  line-height: 65px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  z-index: 10000000000000;
+  display: none;
+}
+
+.menu { 
+      z-index:1000000;
+      font-weight:bold; 
+      font-size:0.8em; 
+      width:100%; 
+      background:#000;  
+      position: absolute;
+      text-align: center;
+      font-size:12px;
+      display: none;
+    }
+
+.menu ul {
+      margin: 0; 
+      padding: 0; 
+      list-style-type: none; 
+      list-style-image: none;
+    }
+
+.menu li {
+      display: block;   
+      padding:15px 0 15px 0; 
+      border-bottom:orange 1px solid;
+    }
+
+.menu li:hover{ 
+      display: block;    
+      background:#000; 
+      padding:15px 0 15px 0; 
+      border-bottom: orange 1px solid;
+    }
+
+.menu ul li a { 
+    text-decoration: none;  
+    margin: 0px; 
+    color:orange;
+}
+
+.menu ul li a:hover {  
+    color: #666; 
+    text-decoration:none;
+  }
+
+.menu a{ 
+    text-decoration:none; 
+    color:#666;
+  }
+
+.menu a:hover {
+    text-decoration: none;
+    color:#666;
+  }
+
+.glyphicon-home{
+  color:white; 
+  font-size:1.5em; 
+  margin-top:5px; 
+  margin:0 auto;
+}
+
+.menu ul a {
+
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 18px;
+  color: orange;
+  
+
 }
 
 #main {
@@ -219,37 +418,52 @@ bottom: 0px;
     background-color: transparent;
     color: orange;
     font-family: 'Baloo Bhaina', cursive;
-    font-size: 15px; }
+    font-size: 15px; 
+    display: none;
+}
 
   .NAME {
     position: absolute;
     top: 30px;
-    left: 15px; }
+    left: 15px;
+    display: none;
+     }
 
   .HOME {
     font-size: 12px;
     position: absolute;
     top: 35px;
-    right: 270px; }
+    right: 270px; 
+    display: none;
+}
 
   .JOB {
     font-size: 12px;
     position: absolute;
     top: 35px;
-    right: 100px; }
+    right: 100px; 
+    display: none;
+}
 
   .CONTACT {
     font-size: 12px;
     position: absolute;
     top: 35px;
-    right: 25px; }
+    right: 25px; 
+	display: none;
+}
 
   .WHO {
     position: absolute;
     top: 35px;
     right: 195px;
     color: #f0ff26;
-    font-size: 12px; }
+    font-size: 12px; 
+    display: none;
+}
+
+
+    
 
     .CONTAINER h1 {
 
