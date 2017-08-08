@@ -5,29 +5,40 @@
 <head>
 
 	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 	<link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 	<title> WHO AM I? </title>
 
 </head>
 
 <body>
-<div id="wrap">
 <header>
-<div class="NavBar">
-			<ul>
-				<li class="NAME"> <i class="ion-android-warning" style="color: #f0ff26"></i> FelixShaw.esy.es </li>
-				<li><a class="HOME" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/index.html"> Home </a></li>
-				<li><a class="WHO" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/WHO/WHO.html"> Who am I? </a></li>
-				<li><a class="JOB" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/JOB/Job.html" target="_blank"> Job Experience </a></li>
-				<li><a class="CONTACT" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/CONTACT/Contact.html"> Contact me </a></li>
-			</ul>
-		</div>
+<div id="topNav" class="navigation">
+<div class="navbar-brand">FelixShaw.esy.es</div>  
+  <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+  </span>
+
+<ul class="menulist">
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/index.html"> Home</a></li>    
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/JOB/Job.html">Resume</a></li>       
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/CONTACT/Contact.html"> Contact </a></li>
+</ul>
+</div>
+<div id="main">
+</div>
 	</header>
 	<main>
+	
 	<div id="main">
 		<div class="CONTAINER1">
 			<h1> Who am I? </h1>
@@ -43,12 +54,10 @@
 				I am 28 years old, but I feel older, maybe because of all the shit I went through. I worked in the entretainment bussines for about 6 years. <br> 
 				I've been many things, an experienced barman, a bouncer, but mainly an Event Producer. I started small, working with local event producing agencies, and made my way to the top.<br> 
 				In 2014 I became the Personnel Manager of CROBAR, the most renowned nightclub in Buenos Aires. And the right hand, of he who booked all the international artists of the best Techno parties. <br>
-				I am a very active person, I love sports, mostly soccer and riding my longboard everywhere in town. I also teach longboard to begginers, and for those who are more advanced, slide and freeride with speed. Though I had my fair share of falls and injuries, it is still my favourite sport ever. I also really like to sail, though I haven't done it for a couple of years now.  <br>
-				Here's a video of me and my friends doing the sport we love, i hope you enjoy it: </p> 
+				I am a very active person, I love sports, mostly soccer and riding my longboard everywhere in town. I also teach longboard to begginers, and for those who are more advanced, slide and freeride with speed. Though I had my fair share of falls and injuries, it is still my favourite sport ever. I also really like to sail, though I haven't done it for a couple of years now.  <br></p>
+				</div>
+				</div>
 				
-				<div id="YOUTUBE"><div style="position:relative;height:0;padding-bottom:56.25%"><iframe src="https://www.youtube.com/embed/CrElKtnX2yQ?list=PLEH6Vl7kRDqyveXbSEK_hDlBxgf1w0GCY?ecver=2" width="640" height="360" frameborder="0" style="position:absolute;bottom:-900px;width:100%;height:100%;left:0" allowfullscreen></iframe></div></div>
-				</div>
-				</div>
 				</main>
 <footer>
 <div id="footer"> 
@@ -59,5 +68,57 @@
 </footer>
 			
 </div>
+<script src="http://code.jquery.com/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script type="text/javascript"></script>
+<script>
+
+  var nav = document.getElementById("topNav");
+var main = document.getElementById("main");
+var menu = document.getElementsByClassName("menuitems");
+var close = document.getElementById("closebtn");
+
+//default to measure if/else from
+nav.style.height = "50px";
+main.style.marginTop = "50px";
+for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
+
+close.addEventListener("click", function(){
+  var menuIcon = close.children;
+  for (i = 0; i < menuIcon.length; i++){
+  menuIcon[i].classList.toggle("active");
+  }   
+});
+
+function navToggle() {  
+  //to close
+  if (nav.style.height <= "275px") {
+  nav.style.height = "50px";
+  main.style.marginTop = "50px";
+  
+      var i = 0;
+      for (i = 0; i < menu.length; i++){
+  menu[i].style.opacity="0.0";
+  menu[i].style.marginTop="100px";
+  };
+      document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+  
+  } 
+  //to open
+  else if (nav.style.height <= "50px") {
+  nav.style.height = "275px";
+  main.style.marginTop = "275px";
+      var i = 0;
+      for (i = 0; i < menu.length; i++){
+  menu[i].style.opacity="1.0";
+  menu[i].style.marginTop="0px";
+  };
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  
+  }
+
+};
+ </script>
+</script>
 </body>
 </html>
