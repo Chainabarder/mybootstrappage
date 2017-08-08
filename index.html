@@ -1,7 +1,8 @@
 <!DOCTYPE html> 
 <html> 
 
-<head> 
+<head>
+
 	<title>Welcome to the Felixperience! </title> 
 
 <meta charset="utf-8">
@@ -14,34 +15,28 @@
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 </head> 
 
 <body>
 <header>
+<div id="topNav" class="navigation">
+<div class="navbar-brand">FelixShaw.esy.es</div>  
+  <span id="closebtn" onclick="navToggle()">
+      <span class="line1"></span>
+      <span class="line2"></span>
+      <span class="line3"></span>
+  </span>
 
-<div class="Navbar-container">
-<div class="navbar-brand"><p> FelixShaw.esy.es </p></div>
-<ul class="nav nav-pills">
-    <li class="active"><a href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/index.html"><span class="glyphicon glyphicon-home" style="color:orange;"></span> Home </a></li>
-
-    <li><a href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/WHO/WHO.html"><span class="glyphicon glyphicon-user"></span> Who am i? </a></li>
-
-    <li><a href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/CONTACT/Contact.html"><span class="glyphicon glyphicon-envelope"></span> Contact </a></li>
-
+<ul class="menulist">
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/index.html">Home</a></li>    
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/WHO/WHO.html">Who am I?</a></li>       
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/CONTACT/Contact.html">Contact</a></li>
+  <li><a class="menuitems" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/JOB/Job.html">Resume</a></li>
 </ul>
 </div>
-
+<div id="main">
+</div>
 </header>
-
-<div class="menu">
-  <ul>
-    <a href="#"><li>Home</li></a>
-    <a href="#"><li>Who am I</li></a>
-    <a href="#"><li>Job Experience</li></a>
-    <a href="#"><li>Contact</li></a>
-  </ul>
-</div> 
 
 <div class="main-container">
             
@@ -62,25 +57,55 @@
 
 <script src="http://code.jquery.com/jquery.js"></script> 
 <script src="js/bootstrap.min.js"></script> 
-<script> $( document ).ready(function() {
+<script type="text/javascript"></script>
+<script>
 
-$( ".cross" ).hide();
-$( ".menu" ).hide();
-$( ".hamburger" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".hamburger" ).hide();
-$( ".cross" ).show();
-});
+  var nav = document.getElementById("topNav");
+var main = document.getElementById("main");
+var menu = document.getElementsByClassName("menuitems");
+var close = document.getElementById("closebtn");
+
+//default to measure if/else from
+nav.style.height = "50px";
+main.style.marginTop = "50px";
+for (i = 0; i < menu.length; i++){menu[i].style.marginTop="100px";};
+
+close.addEventListener("click", function(){
+  var menuIcon = close.children;
+  for (i = 0; i < menuIcon.length; i++){
+  menuIcon[i].classList.toggle("active");
+  }   
 });
 
-$( ".cross" ).click(function() {
-$( ".menu" ).slideToggle( "slow", function() {
-$( ".cross" ).hide();
-$( ".hamburger" ).show();
-});
-});
+function navToggle() {  
+  //to close
+  if (nav.style.height <= "275px") {
+  nav.style.height = "50px";
+  main.style.marginTop = "50px";
+  
+      var i = 0;
+      for (i = 0; i < menu.length; i++){
+  menu[i].style.opacity="0.0";
+  menu[i].style.marginTop="100px";
+  };
+      document.body.style.backgroundColor = "rgba(0,0,0,0.0)";
+  
+  } 
+  //to open
+  else if (nav.style.height <= "50px") {
+  nav.style.height = "275px";
+  main.style.marginTop = "275px";
+      var i = 0;
+      for (i = 0; i < menu.length; i++){
+  menu[i].style.opacity="1.0";
+  menu[i].style.marginTop="0px";
+  };
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  
+  }
 
-});
+};
+ </script>
 </script>
 </body> 
 </html>
@@ -88,18 +113,3 @@ $( ".hamburger" ).show();
 
 
 
-
-<!-- <div class="Navbar-container">
-<div class="Brand-container">
-<i class="ion-android-warning"></i> <a class="navbar-brand" href="#">FelixShaw.esy.es</a> </div>
-    <ul class="Tabs">
-      <li><a class="Home" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/index.html">Home</a></li>
-      <li><a class="Who" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/WHO/WHO.html">Who am I </a></li>
-      <li><a class="Job" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/JOB/Job.html">Job Experience</a></li>
-      <li><a class="Contact" href="file:///C:/Users/evaristo/Desktop/MyPc/CODING/HTML&CSS/Bootstrap/mybootstrappage/TABS/CONTACT/Contact.html">Contact</a></li>
-    </ul>
-    </div>
-  <button class="hamburger">&#9776;</button>
-  <button class="cross">&#735;</button>
-</nav>
--->
