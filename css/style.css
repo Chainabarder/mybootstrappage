@@ -138,58 +138,69 @@ color: orange;
 width: 100%;
 background-image: url("../IMGS/fondo.png");
 background-color: #f0ff26;
-height: 570px;
+height: 600px;
 display: flex;
-display: -webkit-flex;
+flex-direction: column;
 
 }
 
 .col-left h1 {
-   font-family: 'Baloo Bhaina', cursive;
-  font-size: 50px;
-  color: black;
-  margin: 0px;
-  text-align: left;
-  display: flex;
-    display: -webkit-flex;   
-    flex-direction: column;     
-   -webkit-flex-direction: column;
   
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 50px;
+  color: #000;
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .col-right img {
- text-align: right;
- display: flex;
-    display: -webkit-flex;   
-    flex-direction: column;     
-   -webkit-flex-direction: column;
+
+margin: auto;
+min-width: auto;
+min-height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 
 
 #footer {
+
   width:100%; 
   height: 31px;
   background-color: #000;
-  display: inline-block;
-  position: relative; 
+  display: flex;
+  min-width: auto;
+  min-height: auto;
+
 }
 
 .Version {
   font-family: 'Baloo Bhaina', cursive;
   width:33%;
-  display: inline-block;
-  text-align: left;
+  display: flex;
   color: orange;
+  min-width: auto;
+  min-height: auto;
+  justify-content: flex-start;
+  margin: 5px;
   
 }
 
 .Widget {
   font-family: 'Baloo Bhaina', cursive;
-  display: inline-block;
+  display: flex;
   width:33%;
-  text-align: center;
   color: orange;
+  min-width: auto;
+  min-height: auto;
+  justify-content: center;
+  margin: 5px;
 }
 
 
@@ -198,10 +209,14 @@ display: -webkit-flex;
   background-color: #000;
   color: orange;
   text-decoration: none;
-  text-align: right;
   width:33%;
-  display: inline-block;
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px;
 }
+
+
+
 
 
 @media (max-width: 500px) {
@@ -210,169 +225,31 @@ display: -webkit-flex;
 width: 100%;
 background-image: url("../IMGS/fondo.png");
 background-color: #f0ff26;
-height: 570px;
+height: 600px;
 display: flex;
-display: -webkit-flex;
 flex-direction: column;
--webkit-flex-direction: column;
+
 }
 
 .col-left h1 {
-   font-family: 'Baloo Bhaina', cursive;
-  font-size: 50px;
-  color: black;
-  margin: 0px;
-  text-align: left;
   
+  font-family: 'Baloo Bhaina', cursive;
+  font-size: 50px;
+  color: #000;
+  display: flex;
+  margin: 30px;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .col-right img {
- text-align: right;
-}
-/*NAVBAR*/
 
-.nav-pills > li {
-  float: left;
-}
-.nav-pills > li > a {
-  border-radius: 4px;
-  background-color: #000;
-  display: none;
-}
-.nav-pills > li + li {
-  margin: 0px;
-}
-.nav-pills > li.active > a,
-.nav-pills > li.active > a:hover,
-.nav-pills > li.active > a:focus {
-  
-  background-color: #000;
-}
+margin: auto;
+min-width: auto;
+min-height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
 
-.nav-pills > li > a:hover {
-
-  color: #000;
-  background-color: orange;
-}
-
-.nav-pills > li.active > a:hover {
-
-  color: #000;
-  background-color: orange;
-}
-
-.nav-pills > li.active > a {
-
-  color: orange;
-  background-color: #000;
-
-}
-
-.navbar-brand {
-
-font-family: 'Baloo Bhaina', cursive;
-font-size: 28px;
-float: right;
-color: orange;
-
-}
-
-/* BURGER */
-
-.hamburger {
-  background: none;
-  position: absolute;
-  top: 20px;
-  right: 15px;
-  line-height :45px;
-  padding: 5px 15px 0px 15px;
-  color: orange;
-  border: 0;
-  font-size: 1.8em;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 100000;
-  
-}
-
-.cross {
-  background: none;
-  position: absolute;
-  top:20px;
-  right: 15px;
-  padding: 7px 15px 0px 15px;
-  color: orange;
-  border: 0;
-  font-size: 3em;
-  line-height: 65px;
-  font-weight: bold;
-  cursor: pointer;
-  outline: none;
-  z-index: 100000;
-  
-}
-
-.menu { 
-      z-index: 100000;
-      font-weight:bold; 
-      font-size:0.8em; 
-      width:100%; 
-      background:#000;  
-      position: absolute;
-      text-align: center;
-      font-size:12px;
-      
-    }
-
-.menu ul {
-      margin: 0; 
-      padding: 0; 
-      list-style-type: none; 
-      list-style-image: none;
-    }
-
-.menu li {
-      display: block;   
-      padding:15px 0 15px 0; 
-      border-bottom:orange 1px solid;
-    }
-
-.menu li:hover{ 
-      display: block;    
-      background:#000; 
-      padding:15px 0 15px 0; 
-      border-bottom: orange 1px solid;
-    }
-
-.menu ul li a { 
-    text-decoration: none;  
-    margin: 0px; 
-    color:orange;
-}
-
-.menu ul li a:hover {  
-    color: #666; 
-    text-decoration:none;
-  }
-
-.menu a{ 
-    text-decoration:none; 
-    color:#666;
-  }
-
-.menu a:hover {
-    text-decoration: none;
-    color:#666;
-  }
-
-
-.menu ul a {
-
-  font-family: 'Baloo Bhaina', cursive;
-  font-size: 18px;
-  color: orange;
-  
-
-}
 }

@@ -179,9 +179,9 @@ bottom: 0px;
 
 	font-family: 'Baloo Bhaina', cursive;
 	color: orange;
-	
-  justify-content: flex-end;
-	
+	justify-content: flex-end;
+	text-align: left;
+  text-decoration: none;
 
 }
 
@@ -192,6 +192,7 @@ bottom: 0px;
 	font-family: 'Baloo Bhaina', cursive;
 	color: orange;
   justify-content: center;
+  text-align: center;
 	
 
 }
@@ -202,6 +203,7 @@ bottom: 0px;
 	font-family: 'Baloo Bhaina', cursive;
 	color: orange;
   justify-content: flex-start;
+  text-align: right;
 	
 }
 
