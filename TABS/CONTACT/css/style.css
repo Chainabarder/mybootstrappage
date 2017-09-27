@@ -102,11 +102,11 @@ input:not([type="submit"]) {
 }
 
  ::-webkit-input-placeholder {
-    color: #f0ff26;
+    color: #000;
     font-style: italic;
 }
 input:-moz-placeholder, textarea:-moz-placeholder {
-    color: #f0ff26;
+    color: #000;
     font-style: italic;
 }
 textarea {
@@ -134,6 +134,7 @@ textarea {
     content:"M";
 }
 label {
+
     color: orange;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
