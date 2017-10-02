@@ -3,6 +3,7 @@
 body {
 
 	margin: 0px;
+  background-color: #000;
 }
 
 
@@ -134,7 +135,7 @@ body {
 main {
 
   background-color: #000;
-  height: 625px;
+  
 }
 
  .Title h1 {
@@ -154,7 +155,6 @@ main {
 	font-size: 15px;
 	color: #f0ff26;
 	text-align: center;
-  margin-top: 0px;
   margin-left: 40px;
   margin-right: 40px;
 	
@@ -181,8 +181,10 @@ bottom: 0px;
 
 	font-family: 'Baloo Bhaina', cursive;
 	color: orange;
-	justify-content: flex-end;
-	margin-left: 580px;
+	justify-content: center;
+	margin-left: auto;
+  flex: 1;
+  display: inline-flex;
 
 }
 
