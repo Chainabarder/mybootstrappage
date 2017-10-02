@@ -135,8 +135,51 @@ margin-right: 30px;
 
   background-color: #f0ff26;
   background-image: url("../imgs/fondo.png");
-  height: 600px;
+  height: 750px;
+  
 }
+
+h1 {
+
+  font-family: 'Baloo Bhaina', cursive;
+  color: #000;
+  font-size: 50px;
+  text-align: center;
+  margin: 20px 0px;
+  
+}
+
+.Thumb1 {
+
+  height: 250px;
+  width: 400px;
+  background-color: #000;
+  margin-left: 470px;
+   font-family: 'Baloo Bhaina', cursive;
+   text-align: center;
+   text-decoration: none;
+   color: orange;
+
+}
+
+.Thumb2 {
+
+  height: 250px;
+  width: 400px;
+  background-color: #000;
+  margin-left: 470px;
+  margin-top: 50px;
+  color: orange;
+  font-family: 'Baloo Bhaina', cursive;
+  text-align: center;
+  text-decoration: none;
+
+
+}
+
+
+
+
 
 
 
